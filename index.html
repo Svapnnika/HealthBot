@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChatBot Login</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center; 
+            height: 100vh; 
+            margin: 0; 
+            background-color: #f0f0f0;
+            background-image: url('f.jpg');
+            background-size: cover;
+            background-position: center; 
+            background-repeat: no-repeat;
+
+        }
+        .login-box {
+            color: white;
+            padding: 15px;
+            /* border-radius: 10px; */
+            box-shadow: 0 25px 50px rgba(0, 0, 0, 0.1);
+            width: 350px;
+            text-align: center;
+            background-color: black;
+            position: relative;
+            background: rgba(255, 255, 255, 0.25);
+            backdrop-filter: blur(15px);
+            border: 1px solid #fff;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+            border-right: 1px solid rgba(255, 255, 255, 0.5);
+            display: flex;
+            flex-direction: column;
+            gap: 3px;
+
+        }
+        .login-box h1 {
+            margin-bottom: 20px;
+        }
+        .login-box input {
+            padding: 8px;
+            margin: 8px 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        .login-box button {
+            padding: 10px;
+            background-color: teal;
+            color: black;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        .login-box button:hover {
+            background-color: whitesmoke;
+            box-shadow: 30px 30px 10px rgba(0, 0, 0, 0.2);
+        }
+        @keyframes fadeIn {
+            to {
+                opacity: 5; 
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="login-box">
+        <h1 style="text-decoration:underline ;">Login</h1>
+        <input type="text" placeholder="Username" required>
+        <input type="text" placeholder="Email" required>
+        <input type="password" placeholder="Password" required> <br> <br>
+        <button type="submit" onclick="goToChatbot()">Login</button> <br>
+        <p>Not a member? </p>
+        <button onclick="goToPage()" type="submit">Sign up here!</button>
+        <script>
+            function goToPage() {
+                window.location.href = 'signup.html';
+            }
+            function goToChatbot() {
+                window.location.href = 'chatbot.html';
+            }
+        </script>
+    </div>
+</body>
+</html>
