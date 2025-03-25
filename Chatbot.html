@@ -12,10 +12,10 @@
             align-items: center;
             height: 100vh;
             margin: 0;
-            background-color: #f0f0f0;
+            background-color: #311818;
             font-family: Arial, sans-serif;
         }
-        .chat-container {
+        /* .chat-container {
             width: 300px;
             height: 400px;
             background-color: white;
@@ -59,6 +59,16 @@
         }
         .chat-input button:hover {
             background-color: #0056b3;
+        } */
+        df-messenger {
+            --df-messenger-bot-message: #360505;
+            --df-messenger-button-titlebar-color:  #311818;
+            --df-messenger-chat-background-color: #ffffff;
+            --df-messenger-font-color: #e9e0e0;
+            --df-messenger-send-icon:  #311818;
+            --df-messenger-user-message:  #311818;
+            width: 200px;
+            height: 300px;
         }
     </style>
 </head>
@@ -69,14 +79,12 @@
             ChatBot
         </div>
         <div class="chat-messages" id="chatMessages">
-            <!-- Chat messages will appear here -->
-        <!-- </div>
+        </div>
         <div class="chat-input">
             <input type="text" id="userInput" placeholder="Type a message..." />
             <button onclick="sendMessage()">Send</button>
         </div> -->
     <!-- </div> -->
-    -->
 
     <!-- Custom chatbot script - currently commented out
     <script>
@@ -96,12 +104,12 @@
         }
     </script>
     -->
-     <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
-     <df-messenger
-       intent="WELCOME"
-       chat-title="Rakshan"
-       agent-id="8bcaf21e-315a-49b2-959d-b5444ef33e11"
-       language-code="en"
-     ></df-messenger>
+    <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
+    <df-messenger
+      intent="WELCOME"
+      chat-title="Healthcare"
+      agent-id="8bcaf21e-315a-49b2-959d-b5444ef33e11"
+      language-code="en"
+    ></df-messenger>
 </body>
 </html>
